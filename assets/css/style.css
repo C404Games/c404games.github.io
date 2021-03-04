@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 997;
   transition: all 0.5s;
   padding: 16px 0;
-  background: #213b52;
+  background: #000000;
 }
 
 #header .logo h1 {
@@ -226,6 +226,16 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
 /**
 * Mobile Navigation 
 */
@@ -338,8 +348,8 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   padding: 0 0 0 0;
-  background: #213b52;
-  background: linear-gradient(180deg, #213b52 0%, #213c54 35%, #204564 100%);
+  background: #000000;
+  background: linear-gradient(180deg, #000000 0%, #FF8000 3%, #0000FF 97%, #FFFFFF 100%);
 }
 
 #hero h1 {

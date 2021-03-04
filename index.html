@@ -42,9 +42,11 @@
     <div class="container d-flex align-items-center justify-content-between">
 
       <div class="logo">
-        <h1><a href="index.html"><span>C404</span> Games</a></h1>
+        <h1>
+        <!-- Uncomment below if you prefer to use a text -->
+		<!-- <a href="index.html"><span>C404</span> Games</a></h1>-->
         <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+         <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
       </div>
 
       <nav id="navbar" class="navbar">
@@ -77,16 +79,30 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
+		<!-- Script para que el header siga al usuario -->
+		<script>
+		window.onscroll = function() {myFunction()};
+
+		var header = document.getElementById("header");
+		var sticky = header.offsetTop;
+
+		function myFunction() {
+		  if (window.pageYOffset > sticky) {
+			header.classList.add("sticky");
+		  } else {
+			header.classList.remove("sticky");
+		  }
+		}
+		</script>
     </div>
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero">
-
+  <section id="hero" style="background-image: url('assets/img/giphy.gif'); background-repeat: no-repeat; background-attachment: fixed; background-size: 100% 100%;">
     <div class="container">
       <div class="row d-flex align-items-center"">
       <div class=" col-lg-6 py-5 py-lg-0 order-2 order-lg-1" data-aos="fade-right">
-        <h1>Current No Name Game</h1>
+        <h1>Page under construction</h1>
         <h2>Perdiendo amigos en tiempos de pandemia.</h2>
         <a href="#portfolio" class="btn-get-started scrollto">¡Descargalo!</a>
       </div>
